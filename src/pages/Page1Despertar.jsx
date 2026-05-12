@@ -26,11 +26,13 @@ export default function Page1Despertar({ onNext }) {
 
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 py-14 sm:py-20">
 
-        {/* Logo */}
+        {/* Identidade neutra */}
         <div className="mb-7 animate-fade-up">
-          <div className="font-syne font-black text-2xl tracking-tight text-[#006B3F]">
-            MRV <span className="font-light text-gray-300">|</span>{' '}
-            <span className="font-medium text-[#079D56] text-lg">Parque Ilha Bela</span>
+          <div className="inline-flex items-center gap-2 bg-white border border-gray-100 shadow-sm px-4 py-2 rounded-full">
+            <span className="w-2 h-2 rounded-full bg-[#006B3F] animate-pulse-slow" />
+            <span className="font-syne font-bold text-sm text-gray-600 tracking-wide">
+              Parque Ilha Bela · Campos/RJ
+            </span>
           </div>
         </div>
 
