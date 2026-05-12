@@ -47,6 +47,7 @@ const GALERIA = [
 export default function Page3Apresentacao({ audioRef }) {
   const [faqOpen, setFaqOpen] = useState(null)
   const [submitted, setSubmitted] = useState(false)
+  const [wppMsg, setWppMsg] = useState('')
   const [form, setForm]   = useState({
     nome: '', tel: '', email: '',
     renda: '', momento: '', fgts: '', obs: '', wpp: true
@@ -108,6 +109,7 @@ export default function Page3Apresentacao({ audioRef }) {
       (form.fgts    ? `FGTS: ${form.fgts}\n` : '') +
       (form.obs     ? `Obs: ${form.obs}` : '')
     )
+    setWppMsg(msg)
     setSubmitted(true)
     setTimeout(() => window.open(`https://wa.me/${WPP}?text=${msg}`, '_blank'), 1500)
   }
@@ -422,7 +424,7 @@ export default function Page3Apresentacao({ audioRef }) {
                 <h3 className="font-syne font-extrabold text-xl text-[#006B3F] mb-2">Recebemos seu contato!</h3>
                 <p className="text-gray-500 text-sm mb-5">Pedro vai entrar em contato via WhatsApp em breve com sua simulação personalizada.</p>
                 <a
-                  href={`https://wa.me/${WPP}?text=${encodeURIComponent('Olá Pedro! Me cadastrei no site do Parque Ilha Bela e quero mais informações!')}`}
+                  href={`https://wa.me/${WPP}?text=${wppMsg}`}
                   target="_blank" rel="noopener"
                   className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1db954] text-white font-syne font-bold text-sm px-6 py-3 rounded-full transition-all"
                 >
