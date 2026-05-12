@@ -93,12 +93,31 @@ export default function Page3Apresentacao({ audioRef }) {
       return
     }
 
-    // ── SUPABASE (descomente quando tiver credenciais) ──────────────────
-    // fetch('https://SEU_PROJETO.supabase.co/rest/v1/leads', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type':'application/json', 'apikey':'SUA_ANON_KEY', 'Authorization':'Bearer SUA_ANON_KEY', 'Prefer':'return=minimal' },
-    //   body: JSON.stringify({ nome: form.nome, telefone: form.tel.replace(/\D/g,''), email: form.email, status: 'novo', origem: 'Parque Ilha Bela – Funil', obs: `Renda:${form.renda}|Momento:${form.momento}|FGTS:${form.fgts}\n${form.obs}` })
-    // })
+    // ── SUPABASE ─────────────────────────────────────────────────────────
+    try {
+      await fetch('https://okwqamdrgwbfyncqcide.supabase.co/rest/v1/leads', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': 'sb_publishable_uDsFJ2ig8oXpcDb5Xmnv0g_Y4bljUI0',
+          'Authorization': 'Bearer sb_publishable_uDsFJ2ig8oXpcDb5Xmnv0g_Y4bljUI0',
+          'Prefer': 'return=minimal'
+        },
+        body: JSON.stringify({
+          nome: form.nome,
+          telefone: form.tel.replace(/\D/g, ''),
+          email: form.email,
+          renda: form.renda,
+          momento: form.momento,
+          fgts: form.fgts,
+          obs: form.obs,
+          status: 'novo',
+          origem: 'Parque Ilha Bela – Funil'
+        })
+      })
+    } catch (err) {
+      console.error('Erro ao salvar lead:', err)
+    }
     // ─────────────────────────────────────────────────────────────────────
 
     const msg = encodeURIComponent(
