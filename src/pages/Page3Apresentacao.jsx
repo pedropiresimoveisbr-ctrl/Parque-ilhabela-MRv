@@ -6,7 +6,7 @@ import {
 } from '../assets/images.js'
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const WPP = '5522998381805' // ← TROQUE pelo seu número (DDI+DDD+numero, sem espaços)
+const WPP = '5522999999999' // ← TROQUE pelo seu número (DDI+DDD+numero, sem espaços)
 // ─────────────────────────────────────────────────────────────────────────────
 
 const FAQ = [
@@ -122,9 +122,11 @@ export default function Page3Apresentacao({ audioRef }) {
       <section className="bg-[#006B3F] py-14 px-4 sm:px-6 text-center relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFB719] opacity-5 rounded-full blur-3xl pointer-events-none" />
         <div className="relative z-10 max-w-3xl mx-auto">
-          <div className="font-syne font-black text-2xl tracking-tight text-white mb-5 animate-fade-up">
-            MRV <span className="font-light text-white/40">|</span>{' '}
-            <span className="font-medium text-[#00D38D] text-lg">Conquista</span>
+          <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 rounded-full mb-5 animate-fade-up">
+            <span className="w-2 h-2 rounded-full bg-[#00D38D] animate-pulse-slow" />
+            <span className="font-syne font-bold text-sm text-white/80 tracking-wide">
+              Parque Ilha Bela · Campos/RJ
+            </span>
           </div>
           <h1 className="font-syne font-extrabold text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-4 animate-fade-up">
             Sua vez de morar no que é{' '}
@@ -396,10 +398,10 @@ export default function Page3Apresentacao({ audioRef }) {
 
       {/* ── FOOTER ── */}
       <footer className="bg-[#006B3F] text-white/60 text-xs text-center py-7 px-4">
-        <p className="font-bold text-white text-sm mb-1">Parque Ilha Bela – MRV</p>
-        <p>Consultor Pedro · Campos dos Goytacazes, RJ · Rua Saldanha Marinho, 503 · 0800 728 9000</p>
+        <p className="font-bold text-white text-sm mb-1">Parque Ilha Bela · Campos dos Goytacazes</p>
+        <p>Consultor Pedro · Campos/RJ · Atendimento via WhatsApp</p>
         <p className="mt-2 text-[10px] text-white/40">
-          Imagens ilustrativas. Sujeito à análise de crédito. R.11/4.057 – 12º Ofício CRI Campos. Material liberado 19/02/2026.
+          Imagens ilustrativas. Sujeito à análise de crédito. Material destinado exclusivamente à divulgação do produto.
         </p>
       </footer>
 
