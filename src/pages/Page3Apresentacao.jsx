@@ -145,6 +145,47 @@ export default function Page3Apresentacao({ audioRef }) {
         </div>
       </section>
 
+      {/* ── VÍDEO ── */}
+      <section className="py-12 px-4 sm:px-6 bg-[#F4F4F4]">
+        <div className="max-w-4xl mx-auto">
+          <p className="font-syne font-bold text-[10px] tracking-[.15em] uppercase text-[#079D56] mb-1 text-center">Conheça em vídeo</p>
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-[#006B3F] text-center mb-7">
+            Veja o Parque Ilha Bela
+          </h2>
+          <div className="rounded-2xl border-4 border-[#006B3F] shadow-2xl overflow-hidden bg-[#006B3F]">
+            <iframe
+              src="https://www.youtube.com/embed/P0MCcia1NEM"
+              className="w-full aspect-video"
+              title="Parque Ilha Bela - Campos dos Goytacazes"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ── MAPA ── */}
+      <section className="py-12 px-4 sm:px-6 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <p className="font-syne font-bold text-[10px] tracking-[.15em] uppercase text-[#079D56] mb-1 text-center">Onde fica</p>
+          <h2 className="font-syne font-extrabold text-2xl sm:text-3xl text-[#006B3F] text-center mb-2">
+            Localização Privilegiada
+          </h2>
+          <p className="text-center text-gray-500 mb-6 text-sm">Região da Pecuária — Campos dos Goytacazes/RJ</p>
+          <div className="rounded-2xl border-4 border-white shadow-2xl overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726!2d-41.3556!3d-21.7336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdd54c7bafc3e1%3A0x4a3ba1f0af60e33a!2sParque%20Pec%C3%A1ria%2C%20Campos%20dos%20Goytacazes%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1715500000000"
+              className="w-full border-0"
+              style={{ aspectRatio: '16/9' }}
+              title="Localização Parque Ilha Bela"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* ── GALERIA ── */}
       <section className="py-12 px-4 sm:px-6 bg-white">
         <div className="max-w-4xl mx-auto">
