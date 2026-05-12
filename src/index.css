@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+
+.font-syne { font-family: 'Syne', sans-serif; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-slow {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: .6; }
+}
+.animate-fade-up   { animation: fadeUp 0.7s ease both; }
+.animate-fade-up-2 { animation: fadeUp 0.7s ease 0.15s both; }
+.animate-fade-up-3 { animation: fadeUp 0.7s ease 0.3s both; }
+.animate-fade-up-4 { animation: fadeUp 0.7s ease 0.45s both; }
+.animate-pulse-slow { animation: pulse-slow 2s ease-in-out infinite; }
+
+/* progress bar */
+#nprogress { pointer-events: none; }
+#nprogress .bar { background: #00D38D; height: 3px; position: fixed; top: 0; left: 0; z-index: 1031; width: 0; transition: width .4s; }
