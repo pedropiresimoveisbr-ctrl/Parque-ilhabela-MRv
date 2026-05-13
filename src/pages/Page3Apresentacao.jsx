@@ -7,7 +7,7 @@ import {
 import FormularioLead from '../components/FormularioLead.jsx'
 
 // ─── CONFIG ──────────────────────────────────────────────────────────────────
-const WPP = '5522999999999' // ← TROQUE pelo seu número (DDI+DDD+numero, sem espaços)
+const WPP = '5522998381805'
 // ─────────────────────────────────────────────────────────────────────────────
 
 const FAQ = [

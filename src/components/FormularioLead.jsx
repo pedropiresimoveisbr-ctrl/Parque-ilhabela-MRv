@@ -3,7 +3,7 @@ import { CheckCircle2, Phone } from 'lucide-react'
 
 const SUPABASE_URL = 'https://okwqamdrgwbfyncqcide.supabase.co'
 const SUPABASE_KEY = 'sb_publishable_uDsFJ2ig8oXpcDb5Xmnv0g_Y4bljUI0'
-const WPP = '5522999999999' // ← seu número
+const WPP = '5522998381805'
 
 export default function FormularioLead({ funil = 'funil-01' }) {
   const [submitted, setSubmitted] = useState(false)
