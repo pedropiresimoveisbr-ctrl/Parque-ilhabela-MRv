@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Phone } from 'lucide-react'
 import {
   img_fachada, img_aerea, img_piscina, img_salao,
   img_playground, img_sala, img_quarto, img_privativa, img_fitness
