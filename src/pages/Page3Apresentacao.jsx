@@ -293,7 +293,7 @@ export default function Page3Apresentacao({ audioRef }) {
           </h2>
           <p className="text-center text-gray-500 text-sm mb-6">Sem compromisso · Resposta em até 1h via WhatsApp</p>
           <div className="bg-[#F4F4F4] rounded-2xl border border-gray-200 p-6 sm:p-7">
-            <FormularioLead funil="funil-01" />
+            <FormularioLead funil="parque-ilhabela-v1" />
           </div>
         </div>
       </section>

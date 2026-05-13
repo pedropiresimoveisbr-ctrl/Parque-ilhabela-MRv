@@ -5,7 +5,7 @@ const SUPABASE_URL = 'https://okwqamdrgwbfyncqcide.supabase.co'
 const SUPABASE_KEY = 'sb_publishable_uDsFJ2ig8oXpcDb5Xmnv0g_Y4bljUI0'
 const WPP = '5522998381805'
 
-export default function FormularioLead({ funil = 'funil-01' }) {
+export default function FormularioLead({ funil = 'parque-ilhabela-v1' }) {
   const [submitted, setSubmitted] = useState(false)
   const [wppMsg, setWppMsg] = useState('')
   const [loading, setLoading] = useState(false)
